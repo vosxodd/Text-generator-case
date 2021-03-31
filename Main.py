@@ -15,3 +15,18 @@ def correct_text():
             text = text.replace(letter, '')
 
 correct_text()
+text=text.split(" ")
+unic=[]
+b=0
+for i in text:
+    for j in unic:
+        if i==j:
+            b=1
+    if b!=1:
+        unic.append(i)
+    b=0        
+big=[]
+for i in unic:
+    if i==i.capitalize():
+        big.append(i)
+print(big)
