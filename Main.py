@@ -37,4 +37,4 @@ big = []
 for i in unic:
     if i == i.capitalize():
         big.append(i)
-print(big
+print(big)
