@@ -2,7 +2,7 @@
 # Developers:   Aksenov A. (%),
 #               Soloveychik D. (%),
 #               Labuzov A. (%)
-
+import random
 text = input().replace('/n', ' ')
 
 
@@ -18,12 +18,12 @@ def correct_text():
 
 
 correct_text()
-print(text, 'после удаления ненужных символов')
+#print(text, 'после удаления ненужных символов')
 text = text.split(" ")
 for word in text:
     if word == '':
         text.remove(word)
-print(text, 'после сплита')
+#print(text, 'после сплита')
 unic = []
 b = 0
 for i in text:
@@ -50,6 +50,17 @@ for i in unic:
             if word == '':
                 dop.remove(word)
         nexty.append(dop)
-print(unic)
-print(nexty)
-print(big)
+#print(unic)
+#print(nexty)
+#print(big)
+start=random.choice(big)#случайное слово с большой буквы
+helpy=""#вспомогательная переменная
+for i in range(0,len(text)):#версия где столько же слов сколько в оригинале
+    if start==unic[len(unic)-1]:
+        start=random.choice(big)
+    for j in range(0,len(unic)):
+        if start==unic[j] and j!=len(unic)-1:
+            helpy=helpy+start+" "
+            start=random.choice(nexty[j])
+            break
+print(helpy)
