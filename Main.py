@@ -1,5 +1,5 @@
 # Case-study #8
-# Developers:   Aksenov A. (%),
+# Developers:   Aksenov A. (60%),
 #               Soloveychik D. (20%),
 #               Labuzov A. (%)
 import random
