@@ -37,4 +37,19 @@ big = []
 for i in unic:
     if i == i.capitalize():
         big.append(i)
+nexty=[] #список списков
+dop="" #переменная для создания списка списков
+for i in unic:
+    dop=""
+    for j in range(len(text)):
+        if i==text[j] and j!=len(text)-1:
+            dop=dop+text[j+1]+" "
+    if dop!="":
+        dop=dop.split(" ")
+        for word in dop:
+            if word == '':
+                dop.remove(word)
+        nexty.append(dop)
+print(unic)
+print(nexty)
 print(big)
