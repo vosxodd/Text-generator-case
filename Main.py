@@ -1,7 +1,7 @@
 # Case-study #8
 # Developers:   Aksenov A. (60%),
 #               Soloveychik D. (20%),
-#               Labuzov A. (%)
+#               Labuzov A. (30%)
 import random
 
 text = input().replace('/n', ' ')
